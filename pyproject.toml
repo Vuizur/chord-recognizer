@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "chord-recognizer"
+version = "0.1.0"
+description = ""
+authors = ["Hannes Krumbiegel <Vuizur@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "chord_recognizer"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+# whisperx = {git = "https://github.com/m-bain/whisperX"}
+llvmlite = ">=0.40.1"
+librosa = ">=0.10.0.post2"
+vamp = {git = "https://github.com/Vuizur/vampy-host", rev = "submodule-test"}
+syncedlyrics = ">=0.5.0"
+setuptools = ">=68.0.0"
+yt-dlp = ">=2023.7.6"
+
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu117"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,1 @@
+improve syncedlyrics so that metadata search
